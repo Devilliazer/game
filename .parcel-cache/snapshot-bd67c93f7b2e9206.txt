@@ -86,7 +86,7 @@
 51F:\Mygame\node_modules\semver\ranges\min-version.js133819800698219555 0
 47F:\Mygame\node_modules\strip-outer\package.json133819800696329243 0
 41F:\Mygame\node_modules\async\mapSeries.js133819800706734424 0
-29F:\Mygame\src\game_index.html133819815936725524 0
+29F:\Mygame\src\game_index.html133819838331271500 0
 43F:\Mygame\node_modules\electron-to-chromium133819800704267908 1
 42F:\Mygame\node_modules\term-size\readme.md133819800696917542 0
 65F:\Mygame\node_modules\@swc\helpers\_\_ts_add_disposable_resource133819800710284919 1
@@ -4418,7 +4418,7 @@
 71F:\Mygame\node_modules\@parcel\packager-js\src\ScopeHoistingPackager.js133819800722249109 0
 61F:\Mygame\node_modules\@parcel\packager-js\lib\dev-prelude.js133819800722095184 0
 61F:\Mygame\node_modules\@parcel\packager-js\lib\DevPackager.js133819800722115484 0
-38F:\Mygame\.github\workflows\deploy.yml133819834143684179 0
+38F:\Mygame\.github\workflows\deploy.yml133819836832025013 0
 65F:\Mygame\node_modules\@parcel\packager-js\lib\ESMOutputFormat.js133819800722145488 0
 49F:\Mygame\node_modules\@parcel\core\lib\worker.js133819800731895891 0
 71F:\Mygame\node_modules\@parcel\packager-js\lib\ScopeHoistingPackager.js133819800722229125 0
@@ -4811,4 +4811,4 @@
 36F:\Mygame\dist\sprites.b818d463.webp133819800854980277 0
 36F:\Mygame\dist\sprites.db19febb.webp133819800979455020 0
 27F:\Mygame\.github\workflows133819817514396777 1
-38F:\Mygame\.github\workflows\static.yml133819818116694475 0
+38F:\Mygame\.github\workflows\static.yml133819838311916205 0
