@@ -1,0 +1,25 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Це моя гра для браузера.",
+  "scripts": {
+    "start": "parcel src/game_index.html",
+    "build": "parcel build src/game_index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devilliazer/game.git"
+  },
+  "keywords": [],
+  "author": "Dmytro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devilliazer/game/issues"
+  },
+  "homepage": "https://devilliazer.github.io/game",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.13.3"
+  }
+}
