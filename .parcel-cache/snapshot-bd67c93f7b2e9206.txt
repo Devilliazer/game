@@ -1,4 +1,4 @@
-4802
+4809
 61F:\Mygame\node_modules\@parcel\transformer-html\src\inline.js133819800705229960 0
 50F:\Mygame\node_modules\@parcel\events\package.json133819800727626630 0
 51F:\Mygame\node_modules\semver\ranges\min-version.js133819800698219555 0
@@ -27,7 +27,7 @@
 57F:\Mygame\node_modules\cosmiconfig\dist\ExplorerSync.d.ts133819800705785559 0
 66F:\Mygame\node_modules\entities\lib\generated\encode-html.d.ts.map133819800705574011 0
 53F:\Mygame\node_modules\fast-glob\out\utils\array.d.ts133819800705239942 0
-14F:\Mygame\dist133819800855483833 1
+14F:\Mygame\dist133819800979589004 1
 47F:\Mygame\node_modules\@parcel\packager-svg\src133819800719136053 1
 62F:\Mygame\node_modules\htmlnano\lib\modules\sortAttributes.mjs133819800706493700 0
 44F:\Mygame\node_modules\resolve-from\index.js133819800696855757 0
@@ -60,7 +60,7 @@
 47F:\Mygame\node_modules\json5\lib\stringify.d.ts133819800699190347 0
 42F:\Mygame\node_modules\dotenv\README-es.md133819800703687003 0
 55F:\Mygame\node_modules\@parcel\utils\src\getExisting.js133819800710109537 0
-22F:\Mygame\package.json133819800794487999 0
+22F:\Mygame\package.json133819810944791966 0
 81F:\Mygame\node_modules\posthtml\node_modules\dom-serializer\lib\foreignNames.d.ts133819800731247024 0
 36F:\Mygame\node_modules\async\each.js133819800705644070 0
 48F:\Mygame\node_modules\semver\functions\major.js133819800698063645 0
@@ -1972,6 +1972,7 @@
 68F:\Mygame\node_modules\caniuse-lite\data\features\background-sync.js133819800706106403 0
 58F:\Mygame\node_modules\lmdb\dependencies\lz4\lib\lz4file.h133819800706794416 0
 58F:\Mygame\node_modules\lmdb\dependencies\lz4\lib\README.md133819800707818245 0
+41F:\Mygame\dist\game_index.7f94373e.js.map133819800979455020 0
 60F:\Mygame\node_modules\@parcel\utils\test\objectHash.test.js133819800710325996 0
 57F:\Mygame\node_modules\lmdb\dependencies\lz4\lib\xxhash.c133819800705955894 0
 66F:\Mygame\node_modules\caniuse-lite\data\features\iframe-srcdoc.js133819800712464742 0
@@ -3556,6 +3557,7 @@
 51F:\Mygame\node_modules\@parcel\resolver-default\src133819800715227428 1
 60F:\Mygame\node_modules\caniuse-lite\data\features\svg-css.js133819800714977896 0
 64F:\Mygame\node_modules\caniuse-lite\data\features\svg-filters.js133819800714987896 0
+37F:\Mygame\dist\game_index.57c59ef0.js133819800979445013 0
 62F:\Mygame\node_modules\caniuse-lite\data\features\svg-fonts.js133819800714987896 0
 53F:\Mygame\node_modules\@parcel\runtime-js\src\helpers133819800713329700 1
 60F:\Mygame\node_modules\caniuse-lite\data\features\svg-img.js133819800715022767 0
@@ -4172,7 +4174,7 @@
 53F:\Mygame\node_modules\@parcel\watcher\src\binding.cc133819800703092759 0
 54F:\Mygame\node_modules\@parcel\watcher\src\Debounce.hh133819800705119593 0
 48F:\Mygame\node_modules\@parcel\watcher\src\linux133819800705295026 1
-30F:\Mygame\dist\game_index.html133819800855468298 0
+30F:\Mygame\dist\game_index.html133819800979425023 0
 48F:\Mygame\node_modules\@parcel\watcher\src\macos133819800705229960 1
 49F:\Mygame\node_modules\@parcel\watcher\src\shared133819800705009130 1
 58F:\Mygame\node_modules\@parcel\utils\src\getCertificate.js133819800710094482 0
@@ -4283,6 +4285,7 @@
 58F:\Mygame\node_modules\@nodelib\fs.scandir\out\utils\fs.js133819800728037696 0
 56F:\Mygame\node_modules\@parcel\transformer-image\LICENSE133819800704551008 0
 61F:\Mygame\node_modules\@parcel\transformer-image\package.json133819800704925511 0
+42F:\Mygame\dist\game_index.baa7b021.css.map133819800979589004 0
 70F:\Mygame\node_modules\@parcel\core\test\fixtures\main-format-mismatch133819800732086165 1
 52F:\Mygame\node_modules\@parcel\transformer-image\src133819800704885391 1
 57F:\Mygame\node_modules\@parcel\core\src\InternalConfig.js133819800730819135 0
@@ -4647,6 +4650,7 @@
 48F:\Mygame\node_modules\@parcel\core\lib\index.js133819800730738957 0
 57F:\Mygame\node_modules\@parcel\core\lib\InternalConfig.js133819800730809089 0
 59F:\Mygame\node_modules\@parcel\core\lib\loadParcelPlugin.js133819800730884235 0
+37F:\Mygame\dist\game_index.7f94373e.js133819800979415008 0
 57F:\Mygame\node_modules\@parcel\core\lib\PackagerRunner.js133819800731032249 0
 49F:\Mygame\node_modules\@parcel\core\lib\Parcel.js133819800731138140 0
 55F:\Mygame\node_modules\@parcel\core\lib\ParcelConfig.js133819800731247024 0
@@ -4798,6 +4802,9 @@
 54F:\Mygame\node_modules\.bin\update-browserslist-db.cmd133819800787107079 0
 54F:\Mygame\node_modules\.bin\update-browserslist-db.ps1133819800787107079 0
 42F:\Mygame\dist\game_index.3102e199.css.map133819800855483833 0
+41F:\Mygame\dist\game_index.57c59ef0.js.map133819800979455020 0
 37F:\Mygame\dist\game_index.5d21e4ae.js133819800855468298 0
 41F:\Mygame\dist\game_index.5d21e4ae.js.map133819800855483833 0
+38F:\Mygame\dist\game_index.baa7b021.css133819800979578991 0
 36F:\Mygame\dist\sprites.b818d463.webp133819800854980277 0
+36F:\Mygame\dist\sprites.db19febb.webp133819800979455020 0
