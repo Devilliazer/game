@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel src/game_index.html",
     "build": "parcel build src/game_index.html --public-url ./",
-    "deploy": "gh-pages -d dist"
+    "deploy": "game_1 -d dist"
   },
   "repository": {
     "type": "git",
