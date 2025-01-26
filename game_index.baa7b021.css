@@ -17,8 +17,9 @@ body {
 }
 
 #game-container {
+  user-select: none;
   background-color: #87ceeb;
-  background-image: url("sprites.db19febb.webp");
+  background-image: url("sprites.237a7cf3.png");
   background-position: 0 0;
   background-repeat: repeat;
   background-size: 1024px 1024px;
@@ -28,9 +29,13 @@ body {
   overflow: hidden;
 }
 
+#joystick, #stick {
+  user-select: none;
+}
+
 #player {
   z-index: 10;
-  background-image: url("sprites.db19febb.webp");
+  background-image: url("sprites.237a7cf3.png");
   background-position: -470px -370px;
   background-size: 1024px 1024px;
   width: 64px;
@@ -42,7 +47,7 @@ body {
 }
 
 .enemy {
-  background-image: url("sprites.db19febb.webp");
+  background-image: url("sprites.237a7cf3.png");
   background-position: -64px -128px;
   background-size: 1024px 1024px;
   width: 64px;
@@ -51,7 +56,7 @@ body {
 }
 
 .item {
-  background-image: url("sprites.db19febb.webp");
+  background-image: url("sprites.237a7cf3.png");
   background-position: -128px -128px;
   background-size: 1024px 1024px;
   width: 32px;
@@ -62,15 +67,17 @@ body {
 #ui {
   color: #fff;
   z-index: 20;
-  z-index: 15;
   background: #000000b3;
   border-radius: 5px;
   padding: 10px;
-  font-family: "Press Start 2P", cursive;
   font-size: 14px;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 10px;
+  left: 10px;
+}
+
+.hidden {
+  display: none;
 }
 
 .middle {
@@ -104,5 +111,22 @@ body {
 
 #joystick .control-stick:active {
   background: #c8c8c8;
+}
+
+#health-bar {
+  background-color: #333;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 300px;
+  height: 25px;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#health-fill {
+  width: 100%;
+  height: 100%;
+  transition: width .5s, background-color .5s;
 }
 /*# sourceMappingURL=game_index.baa7b021.css.map */
