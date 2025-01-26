@@ -10,7 +10,7 @@ canvas.height = window.innerHeight;
 
 // Завантажуємо спрайт-лист
 const sprites = new Image();
-sprites.src = "game_assets/sprites.webp";
+sprites.src = "game_assets/sprites.png";
 sprites.onerror = () => {
   console.error("Не вдалося завантажити спрайт-лист.");
 };
@@ -136,7 +136,6 @@ function drawScene() {
   );
 }
 
-
 // Логіка руху
 const movement = {
   w: false,
@@ -144,24 +143,60 @@ const movement = {
   a: false,
   d: false,
 };
+
+const speed = 5;
+const rollSpeed = 20;
+let isRolling = false;
+let rollCooldown = false;
+const rollCooldownTime = 1000; // 1 секунда
+let velocityX = 0;
+let velocityY = 0;
+
+// Логіка удару та блоку
+let isAttacking = false;
+let isBlocking = false;
+
+// Логіка прокачки персонажа
+let playerLevel = 1;
+let experience = 0;
+const experienceToLevelUp = 100;
+
+function levelUp() {
+  playerLevel++;
+  experience = 0;
+  console.log(`Вітаємо! Ви досягли рівня ${playerLevel}`);
+}
+
+function gainExperience(amount) {
+  experience += amount;
+  if (experience >= experienceToLevelUp) {
+    levelUp();
+  }
+}
+
+// Оновлення позиції гравця з урахуванням стрибка
 function updatePlayerPosition() {
-  const speed = 10;
-  if (movement["w"] === true) playerPosition.y -= speed;
-  if (movement["s"] === true) playerPosition.y += speed;
-  if (movement["a"] === true) playerPosition.x -= speed;
-  if (movement["d"] === true) playerPosition.x += speed;
-  //console.log("Позиція гравця:", playerPosition);
+  if (isRolling) {
+    playerPosition.x += velocityX;
+    playerPosition.y += velocityY;
+  } else {
+    if (movement["w"]) playerPosition.y -= speed;
+    if (movement["s"]) playerPosition.y += speed;
+    if (movement["a"]) playerPosition.x -= speed;
+    if (movement["d"]) playerPosition.x += speed;
+  }
 
   // Оновлюємо зміщення карти
   offsetX = playerPosition.x - canvas.width / 2 + TILE_SIZE / 2;
   offsetY = playerPosition.y - canvas.height / 2 + TILE_SIZE / 2;
-  //console.log("Зміщення карти:", { offsetX, offsetY });
 
   drawScene();
 }
 
 // Додаємо слухачі для клавіатури
-window.addEventListener("keyup", (e) => {
+const gameContainer = document.getElementById("game-container");
+
+gameContainer.addEventListener("keyup", (e) => {
   console.log("Подія keyup спрацювала", e.key);
   const key = e.key.toLowerCase();
   if (key in movement) {
@@ -170,20 +205,54 @@ window.addEventListener("keyup", (e) => {
   }
 });
 
-window.addEventListener("keydown", (e) => {
+gameContainer.addEventListener("keydown", (e) => {
   console.log("Подія keydown спрацювала", e.key);
   const key = e.key.toLowerCase();
   if (key in movement) {
     movement[key] = true;
     console.log(`Клавіша натиснута: ${key}`);
   }
-});
-window.addEventListener("keydown", (e) => {
-  if (["w", "a", "s", "d"].includes(e.key.toLowerCase())) {
+  if (["w", "a", "s", "d"].includes(key)) {
     e.preventDefault();
-    movement[e.key.toLowerCase()] = true;
+    movement[key] = true;
+  }
+  if (key === " ") {
+    e.preventDefault();
+    if (!isRolling && !rollCooldown) {
+      isRolling = true;
+      rollCooldown = true;
+      setTimeout(() => {
+        isRolling = false;
+      }, 200); // Тривалість перекату
+      setTimeout(() => {
+        rollCooldown = false;
+      }, rollCooldownTime); // Перезарядка перекату
+    }
   }
 });
+
+// Додаємо слухачі для миші
+gameContainer.addEventListener("mousedown", (e) => {
+  if (e.button === 0) {
+    isAttacking = true;
+    console.log("Атака!");
+  } else if (e.button === 2) {
+    isBlocking = true;
+    console.log("Блок!");
+  }
+});
+
+gameContainer.addEventListener("mouseup", (e) => {
+  if (e.button === 0) {
+    isAttacking = false;
+  } else if (e.button === 2) {
+    isBlocking = false;
+  }
+});
+
+// Фокус на контейнер гри для захоплення подій клавіатури
+gameContainer.focus();
+
 // Слухачі для джойстика
 const joystick = document.getElementById("joystick");
 const stick = document.getElementById("stick");
@@ -259,3 +328,38 @@ window.addEventListener("resize", resizeCanvas);
 resizeCanvas();
 window.addEventListener("orientationchange", resizeCanvas);
 
+
+// Оновлення життя
+function updateHealth(health) {
+  const healthFill = document.getElementById("health-fill");
+  const maxHealth = 100; // Максимальне значення життя
+  const healthPercentage = (health / maxHealth) * 100;
+  healthFill.style.width = healthPercentage + "%";
+
+  // Зміна кольору від зеленої до червоної
+  const green = Math.floor((health / maxHealth) * 255);
+  const red = 255 - green;
+  healthFill.style.backgroundColor = `rgb(${red}, ${green}, 0)`;
+}
+
+// Приклад виклику функції для оновлення життя
+let health = 100;
+updateHealth(health);
+
+// Зменшення життя для тестування
+setInterval(() => {
+  if (health < 0) health = 100;
+  updateHealth(health);
+}, 1000);
+
+// Додаємо функціонал для кнопки перемикання UI
+const toggleUIButton = document.getElementById("toggle-ui");
+const uiElement = document.getElementById("ui");
+
+toggleUIButton.addEventListener("click", () => {
+  if (uiElement.classList.contains("hidden")) {
+    uiElement.classList.remove("hidden");
+  } else {
+    uiElement.classList.add("hidden");
+  }
+});

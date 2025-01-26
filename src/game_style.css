@@ -28,15 +28,24 @@ body {
     height: 100vh;
     background-color: #87CEEB;
     overflow: hidden;
-    background-image: url('game_assets/sprites.webp');
+    background-image: url('game_assets/sprites.png');
     background-size: 1024px 1024px;
     /* Розмір спрайт-листа */
     background-position: 0 0;
     /* Початкова позиція фону */
     background-repeat: repeat;
     /* Повторення для заповнення */
+    user-select: none; /* Вимикає виділення тексту */
+    -webkit-user-select: none; /* Вимикає виділення тексту в WebKit-браузерах */
+    -moz-user-select: none; /* Вимикає виділення тексту в Firefox */
+    -ms-user-select: none; /* Вимикає виділення тексту в Internet Explorer/Edge */
 }
-
+#joystick, #stick {
+    user-select: none; /* Вимикає виділення тексту */
+    -webkit-user-select: none; /* Вимикає виділення тексту в WebKit-браузерах */
+    -moz-user-select: none; /* Вимикає виділення тексту в Firefox */
+    -ms-user-select: none; /* Вимикає виділення тексту в Internet Explorer/Edge */
+}
 /* Гравець */
 #player {
     position: absolute;
@@ -45,7 +54,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url('game_assets/sprites.webp');
+    background-image: url('game_assets/sprites.png');
     background-size: 1024px 1024px;
     /* Розмір спрайт-листа */
     background-position: -470px -370px;
@@ -59,7 +68,7 @@ body {
     position: absolute;
     width: 64px;
     height: 64px;
-    background-image: url('game_assets/sprites.webp');
+    background-image: url('game_assets/sprites.png');
     background-size: 1024px 1024px;
     background-position: -64px -128px;
     /* Позиція спрайта противника */
@@ -70,7 +79,7 @@ body {
     position: absolute;
     width: 32px;
     height: 32px;
-    background-image: url('game_assets/sprites.webp');
+    background-image: url('game_assets/sprites.png');
     background-size: 1024px 1024px;
     background-position: -128px -128px;
     /* Позиція спрайта предмета */
@@ -91,16 +100,8 @@ body {
     /* Завжди поверх гри */
 }
 
-#ui {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 14px;
-    z-index: 15;
+.hidden {
+    display: none;
 }
 
 .middle {
@@ -136,3 +137,20 @@ body {
 #joystick .control-stick:active {
     background: rgba(200, 200, 200, 1);
 }
+
+#health-bar {
+    width: 300px;
+    height: 25px;
+    background-color: #333;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  #health-fill {
+    height: 100%;
+    width: 100%;
+    transition: width 0.5s ease, background-color 0.5s ease;
+  }

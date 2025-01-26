@@ -11,20 +11,24 @@
     <link rel="stylesheet" href="game_style.css" />
   </head>
   <body>
+    <div  id="game-container" tabindex="0">
     <canvas id="gameCanvas"></canvas>
 
     <!-- Інтерфейс користувача -->
     <div id="ui">
       <p>Рівень: <span id="level">1</span></p>
-      <p>Життя: <span id="health">100</span></p>
-      <p>Очки: <span id="score">0</span></p>
+      <div id="health-bar">
+        <div id="health-fill"></div>
+      </div>
     </div>
 
     <!-- Джойстик для мобільних -->
     <div id="joystick">
       <div class="control-stick" id="stick"></div>
     </div>
+    <button id="toggle-ui">Toggle UI</button>
+  </div>
     <script src="game_script.js"></script>
-    
+  
   </body>
 </html>
