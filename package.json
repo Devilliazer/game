@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Це моя гра для браузера.",
   "scripts": {
-    "start": "parcel src/game_index.html",
-    "build": "parcel build src/game_index.html --public-url ./",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
     "deploy": "game_1 -d dist"
   },
   "repository": {

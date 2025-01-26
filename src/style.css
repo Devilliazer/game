@@ -28,7 +28,7 @@ body {
     height: 100vh;
     background-color: #87CEEB;
     overflow: hidden;
-    background-image: url('game_assets/sprites.png');
+    background-image: url('assets/sprites.png');
     background-size: 1024px 1024px;
     /* Розмір спрайт-листа */
     background-position: 0 0;
@@ -54,7 +54,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url('game_assets/sprites.png');
+    background-image: url('assets/sprites.png');
     background-size: 1024px 1024px;
     /* Розмір спрайт-листа */
     background-position: -470px -370px;
@@ -68,7 +68,7 @@ body {
     position: absolute;
     width: 64px;
     height: 64px;
-    background-image: url('game_assets/sprites.png');
+    background-image: url('assets/sprites.png');
     background-size: 1024px 1024px;
     background-position: -64px -128px;
     /* Позиція спрайта противника */
@@ -79,7 +79,7 @@ body {
     position: absolute;
     width: 32px;
     height: 32px;
-    background-image: url('game_assets/sprites.png');
+    background-image: url('assets/sprites.png');
     background-size: 1024px 1024px;
     background-position: -128px -128px;
     /* Позиція спрайта предмета */

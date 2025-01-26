@@ -10,7 +10,7 @@ canvas.height = window.innerHeight;
 
 // Завантажуємо спрайт-лист
 const sprites = new Image();
-sprites.src = "game_assets/sprites.png";
+sprites.src = "assets/sprites.png";
 sprites.onerror = () => {
   console.error("Не вдалося завантажити спрайт-лист.");
 };
