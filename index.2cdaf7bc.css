@@ -19,7 +19,7 @@ body {
 #game-container {
   user-select: none;
   background-color: #87ceeb;
-  background-image: url("sprites.237a7cf3.png");
+  background-image: url("sprites.b88964cf.png");
   background-position: 0 0;
   background-repeat: repeat;
   background-size: 1024px 1024px;
@@ -35,7 +35,7 @@ body {
 
 #player {
   z-index: 10;
-  background-image: url("sprites.237a7cf3.png");
+  background-image: url("sprites.b88964cf.png");
   background-position: -470px -370px;
   background-size: 1024px 1024px;
   width: 64px;
@@ -47,7 +47,7 @@ body {
 }
 
 .enemy {
-  background-image: url("sprites.237a7cf3.png");
+  background-image: url("sprites.b88964cf.png");
   background-position: -64px -128px;
   background-size: 1024px 1024px;
   width: 64px;
@@ -56,7 +56,7 @@ body {
 }
 
 .item {
-  background-image: url("sprites.237a7cf3.png");
+  background-image: url("sprites.b88964cf.png");
   background-position: -128px -128px;
   background-size: 1024px 1024px;
   width: 32px;
@@ -129,4 +129,4 @@ body {
   height: 100%;
   transition: width .5s, background-color .5s;
 }
-/*# sourceMappingURL=game_index.baa7b021.css.map */
+/*# sourceMappingURL=index.2cdaf7bc.css.map */

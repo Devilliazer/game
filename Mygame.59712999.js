@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"kdom1":[function(require,module,exports,__globalThis) {
+})({"7Uaak":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "e917ae447f94373e";
+module.bundle.HMR_BUNDLE_ID = "7055c94b59712999";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -595,8 +595,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"fQpTq":[function(require,module,exports,__globalThis) {
+},{}],"4M6V8":[function(require,module,exports,__globalThis) {
 
-},{}]},["kdom1","fQpTq"], "fQpTq", "parcelRequire94c2")
+},{}]},["7Uaak","4M6V8"], "4M6V8", "parcelRequire94c2")
 
-//# sourceMappingURL=game_index.7f94373e.js.map
+//# sourceMappingURL=Mygame.59712999.js.map
