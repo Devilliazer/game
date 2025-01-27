@@ -8,12 +8,17 @@ canvas.style.height = "100%";
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+
 // Завантажуємо спрайт-лист
+import spriteSheet from './assets/sprites.png';
+
 const sprites = new Image();
-sprites.src = "assets/sprites.png";
+sprites.src = spriteSheet;
+
 sprites.onerror = () => {
   console.error("Не вдалося завантажити спрайт-лист.");
 };
+
 sprites.onload = () => {
   console.log("Спрайт-лист завантажено.");
   drawScene();
