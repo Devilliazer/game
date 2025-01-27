@@ -8,7 +8,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 // Завантажуємо спрайт-лист
 const sprites = new Image();
-sprites.src = "assets/sprites.png";
+sprites.src = "./assets/sprites.png";
 sprites.onerror = ()=>{
     console.error("\u041D\u0435 \u0432\u0434\u0430\u043B\u043E\u0441\u044F \u0437\u0430\u0432\u0430\u043D\u0442\u0430\u0436\u0438\u0442\u0438 \u0441\u043F\u0440\u0430\u0439\u0442-\u043B\u0438\u0441\u0442.");
 };
